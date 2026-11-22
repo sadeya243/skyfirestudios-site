@@ -11,7 +11,10 @@
   <meta property="og:url" content="https://skyfirestudios.studio/mathmend/">
   <link rel="canonical" href="https://skyfirestudios.studio/mathmend/">
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-  <meta name="theme-color" content="#1f3a5f">
+  <meta name="theme-color" content="#0d1b3e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -36,7 +39,7 @@
       <div class="wrap">
         <div>
           <p class="eyebrow">Maths help that teaches</p>
-          <h1>Find the exact mistake in your maths, and fix it.</h1>
+          <h1>Find the exact mistake in your maths, <span class="grad-text">and fix it.</span></h1>
           <p class="lead">MathMend checks your own working line by line, shows the first place it went wrong, explains why, and helps you practise until it sticks. Not just an answer.</p>
       <div class="stores">
         <a data-store="android" href="#">Get it on Google Play</a>
@@ -45,16 +48,16 @@
       </div>
           <p class="note">iOS and web versions are on the way.</p>
         </div>
-      <div>
+      <div class="phone-stage">
         <div class="phone" role="img" aria-label="Illustration: MathMend marks line 1 of a student's working as the first mistake">
           <div class="screen">
-            <div class="bar">Check My Working</div>
+            <div class="bar">Check My Working<span>Verified</span></div>
             <div class="body">
-              <div class="q">Question<br><b>Solve 3(x &minus; 2) = 2x + 5</b></div>
+              <div class="q">Question<b>Solve 3(x &minus; 2) = 2x + 5</b></div>
               <div class="line bad">3x &minus; 2 = 2x + 5<span class="tag red">First mistake</span></div>
               <div class="line dim">x &minus; 2 = 5<span class="tag grey">follows line 1</span></div>
               <div class="line dim">x = 7<span class="tag grey">follows line 1</span></div>
-              <div class="explain"><b>Line 1:</b> 3(x &minus; 2) means 3x &minus; 6. Only the x was multiplied by 3. The correct answer is x = 11.</div>
+              <div class="explain"><b>Fix line 1:</b> 3(x &minus; 2) means 3x &minus; 6. Only the x was multiplied by 3. The correct answer is x = 11.</div>
             </div>
           </div>
         </div>
@@ -63,9 +66,19 @@
       </div>
     </section>
 
-    <section class="alt">
+    <div class="strip">
       <div class="wrap">
-        <h2>How it works</h2>
+        <p>Maths taught in schools worldwide, including</p>
+        <span class="chip">Cambridge IGCSE</span><span class="chip">A Level</span><span class="chip">IB</span><span class="chip">GCSE</span><span class="chip">Common Core</span><span class="chip">SAT</span><span class="chip">CBSE</span>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2>From &ldquo;I got it wrong&rdquo; to &ldquo;I get it&rdquo; in four steps</h2>
+        </div>
         <ol class="steps">
           <li><h3>Type or snap your question</h3><p class="note">Type it in, or take a photo of the question and your working.</p></li>
           <li><h3>MathMend checks every step</h3><p class="note">Supported maths is checked by a maths engine, so steps are verified rather than guessed.</p></li>
@@ -75,23 +88,71 @@
       </div>
     </section>
 
+    <section class="alt">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">The difference</p>
+          <h2>An answer is not the same as understanding</h2>
+          <p class="lead">Many apps can give you an answer. MathMend helps you see why your own method went wrong.</p>
+        </div>
+        <div class="compare">
+          <div class="card them">
+            <span class="pill">Typical answer apps</span>
+            <ul>
+              <li>Give you the final answer and a worked solution</li>
+              <li>Don&rsquo;t look at the working you wrote</li>
+              <li>Easy to copy without learning</li>
+              <li>Forget your mistakes once you close the app</li>
+            </ul>
+          </div>
+          <div class="card us">
+            <span class="pill">MathMend</span>
+            <ul>
+              <li>Checks your own working, line by line</li>
+              <li>Finds the first real mistake and explains why</li>
+              <li>Asks &ldquo;Did you understand?&rdquo; and explains again if needed</li>
+              <li>Remembers your mistakes and builds practice from them</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section>
       <div class="wrap">
-        <h2>Why students and teachers choose MathMend</h2>
+        <div class="section-head">
+          <p class="eyebrow">Why MathMend</p>
+          <h2>Built for learning, not copying</h2>
+        </div>
         <div class="grid">
-          <div class="card"><h3>Checks your method, not just the answer</h3><p>Valid alternative methods are accepted. The aim is to understand where your thinking went wrong.</p></div>
-          <div class="card"><h3>Explains it twice if you need it</h3><p>Every solution ends with &ldquo;Did you understand?&rdquo;. Tap No and the same solution is explained again, more simply.</p></div>
-          <div class="card"><h3>Learning, not copying</h3><p>Built to help you learn, with practice from your own mistakes and progress you can see.</p></div>
-          <div class="card"><h3>Honest when unsure</h3><p>If MathMend can&rsquo;t read a question clearly or a topic isn&rsquo;t supported yet, it says so instead of guessing.</p></div>
+          <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div><h3>Checks your method</h3><p>Valid alternative methods are accepted. The aim is to understand where your thinking went wrong.</p></div>
+          <div class="card"><div class="icon violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg></div><h3>Explains it twice if needed</h3><p>Every solution ends with &ldquo;Did you understand?&rdquo;. Tap No and the same solution is explained again, more simply.</p></div>
+          <div class="card"><div class="icon mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2l4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg></div><h3>Practice from your mistakes</h3><p>Your own mistakes become practice, with progress you can see.</p></div>
+          <div class="card"><div class="icon coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Honest when unsure</h3><p>If MathMend can&rsquo;t read a question clearly or a topic isn&rsquo;t supported yet, it says so instead of guessing.</p></div>
         </div>
       </div>
     </section>
 
     <section class="alt">
       <div class="wrap">
-        <h2>For schools</h2>
-        <p class="lead">Worried about students copying maths homework from AI? MathMend is designed to help students learn their own method. Teacher tools are coming, and we are inviting schools to a free pilot.</p>
-        <a class="btn btn-primary" href="schools.html">Learn about the school pilot</a>
+        <div class="band">
+          <p class="eyebrow" style="color:#a7f3d0">For schools</p>
+          <h2>Worried about students copying maths homework from AI?</h2>
+          <p class="lead">MathMend is designed to help students learn their own method. Teacher tools are coming, and we are inviting schools to a free pilot.</p>
+          <a class="btn btn-primary" href="schools.html">Learn about the school pilot</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap center">
+        <h2>Start fixing your maths mistakes today</h2>
+        <p class="lead">Download MathMend and check your next piece of working.</p>
+        <div class="stores" style="justify-content:center">
+          <a data-store="android" href="#">Get it on Google Play</a>
+          <a data-store="ios" href="#">Download on the App Store</a>
+          <a data-store="web" href="#">Use MathMend in your browser</a>
+        </div>
       </div>
     </section>
   </main>
