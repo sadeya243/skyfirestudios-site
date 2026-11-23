@@ -187,3 +187,13 @@ details p { color: var(--muted); }
 .site-footer ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 18px; }
 .site-footer a { color: var(--muted); text-decoration: none; font-weight: 600; }
 .site-footer a:hover { color: var(--blue); }
+
+/* Worked examples and audience paths */
+.explain.bad { background: #fdecec; border-color: #fecaca; color: #7f1d1d; }
+.explain.bad b { color: #991b1b; }
+.tag.ok { background: #d1fae5; color: #065f46; }
+.compare .q { color: #51627a; }
+@media (prefers-color-scheme: dark) { .compare .q { background: #1b2a4a; color: #a3b1c9; } .compare .q b { color: #e8eefb; } .compare .line { color: #93c5fd; } .compare .line.bad { color: #1d4ed8; } }
+a.card.path { text-decoration: none; color: inherit; display: block; }
+.path-cta { display: inline-block; margin-top: 14px; font-weight: 800; color: var(--blue); }
+@media (prefers-color-scheme: dark) { .path-cta { color: var(--sky); } }

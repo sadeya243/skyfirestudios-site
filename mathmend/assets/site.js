@@ -14,6 +14,8 @@
       el.href = url;
       el.textContent = labels[kind];
       el.rel = "noopener";
+      el.classList.remove("is-soon");
+      el.removeAttribute("aria-disabled");
       if (kind === device) el.classList.add("is-primary");
     } else {
       el.removeAttribute("href");
