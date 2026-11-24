@@ -197,3 +197,15 @@ details p { color: var(--muted); }
 a.card.path { text-decoration: none; color: inherit; display: block; }
 .path-cta { display: inline-block; margin-top: 14px; font-weight: 800; color: var(--blue); }
 @media (prefers-color-scheme: dark) { .path-cta { color: var(--sky); } }
+
+/* Classroom photo band */
+.photo-band { padding: 24px 0 8px; }
+.photo { position: relative; margin: 0; border-radius: 28px; overflow: hidden; box-shadow: var(--shadow-lg); background: #0d1b3e; }
+.photo img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; max-height: 600px; object-fit: cover; }
+.photo figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 80px 36px 30px; background: linear-gradient(180deg, transparent, rgba(8, 15, 40, .85)); color: #fff; }
+.photo figcaption h2 { color: #fff; margin: 0 0 6px; }
+.photo figcaption p { margin: 0; color: #d6e2ff; max-width: 620px; }
+@media (max-width: 640px) {
+  .photo { border-radius: 20px; }
+  .photo figcaption { position: static; padding: 20px 20px 22px; background: linear-gradient(135deg, #13246a, #1d3fb8); }
+}
